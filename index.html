@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Taskcluster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="/src/faviconLogo.png">
+
+    <!-- Fonts -->
+    <!-- TODO: Move Roboto font to hosted/non-Google version -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/src/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/src/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/src/fontawesome/css/solid.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <!-- TODO: Replace Tailwind CDN with 'only-whats-used version' -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/css/index.css">
+
+    <!-- TODO: Add opengraph tags -->
+    
+</head>
+
+<body class="">
+    <header class="p-4 text-right flex items-center justify-end w-full gap-4">
+        <a href="#"><i class="fa-lg fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-lg fa-solid fa-book-open"></i> </a>
+    </header>
+    <main class="py-24 px-8">
+        <section class="hero container max-w-screen-lg mx-auto mb-24 flex flex-col lg:flex-row text-center lg:text-left justify-center lg:justify-start items-center lg:items-start gap-8">
+            <img class="w-24 block lg:mt-2" src="/src/images/logo.svg" alt="Taskcluster logo">
+            <!-- Content -->
+            <div class="max-w-lg">
+                <h1 class="font-thin text-5xl lg:text-7xl tracking-widest uppercase mb-4">Taskcluster</h1>
+                <p class="mb-8">Taskcluster is the task execution framework that supports Mozilla's continuous integration and release processes. It is a flexible, scalable open-source framework that can be used to build complex, highly customized CI systems.</p>
+                <a class="bg-[#4177a5] px-4 py-2 rounded inline-flex gap-2 items-center" href="https://docs.taskcluster.net/"><i class="fa-solid fa-book-open"></i> Documentation</a>
+            </div>
+            <img class="hidden lg:block max-w-xs w-full ml-auto" src="/src/images/stepping_up.svg" alt="A person stepping on a bar chart that grows from left to right">
+        </section>
+
+        <!-- Rick Taylor Testimonial -->
+        <section class="border-t border-[#2f3840] container max-w-screen-lg mx-auto pt-24 mb-24">
+            <div class="max-w-4xl mx-auto">
+                <p class="italic mb-4 text-xl md:text-2xl leading-relaxed ">"Taskcluster has given us more flexibility than any of the CI solutions we've used in the past. It is well engineered, letting us easily pick and choose the components we need, and quickly replace any that don't suit our use cases. Its native support for Kubernetes meshes perfectly with our tech stack."</p>
+            <span class="block mb-2 text-xl">
+                <strong>Ricky Taylor</strong>, Co-Founder at Well Played Games
+            </span>
+            <img class="w-40" src="/src/images/well_played_games_logo.png" alt="A logo of the company Well Played Games">
+            </div>
+        </section>
+
+        <!-- Built for Scale -->
+        <section class="border-t border-[#2f3840] container max-w-screen-lg mx-auto pt-24 mb-24">
+            <h2 class="text-5xl tracking-wide text-center font-thin">Built for Scale</h2>
+            <p>There are lots of continuous integration (CI) solutions out there that support simple workflows, but what if your CI process is more complex? What if you need something more customizable and more scalable?</p>
+            <h3>ENTER TASKCLUSTER.</h3>
+            <p>Taskcluster is a task execution framework developed by Mozilla. Initially designed in service of <a href="https://firefox-ci-tc.services.mozilla.com/tasks/index/gecko.v2.mozilla-release.latest.firefox">Firefox</a> and <a href="https://community-tc.services.mozilla.com/tasks/index/project">Mozilla's new products</a>, Taskcluster has grown into an open source tool that allows anyone to develop and deploy sophisticated CI solutions and release processes.</p>
+            <!-- Tweet -->
+            <div>
+                <span>Chris Cooper</span>
+                <p>Firefox CI in January 2019: 7,139,432 tasks; 259.0 compute years; 1,071,533 unique workers; 383,411 maximum concurrent tasks #Mozilla #ContinuousIntegration #Taskcluster</p>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="border-t border-[#2f3840] container max-w-screen-lg mx-auto pt-24 mb-24">
+            <h2 class="text-5xl tracking-wide text-center font-thin">Benefits</h2>
+            <ul>
+                <li>
+                    <h3><i class="fa-solid fa-chart-line"></i> Large-Scale</h3>
+                    <p>The deployment of Taskcluster that runs Firefox CI routinely runs over 7,000,000 tasks per month. It can easily handle 350,000 concurrent tasks without breaking a sweat. The release process for Firefox contains well over 8,000 individual tasks.
+                    </p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-gear"></i> Customizable</h3>
+                    <p>Taskcluster is designed as a flexible set of services and tools to build custom continuous integration, deployment, and release processes. Its micro-service architecture allows you to <a class="underline" href="https://docs.taskcluster.net/docs/manual/using/integration">easily adapt or replace an existing service</a> to meet the needs of your business or project.
+                    </p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-cloud"></i> Cloud Agnostic</h3>
+                    <p>Already have an established presence in AWS? Or GCP? Or Azure? Or packet.net? Or bitbar? Or your own hardware in a datacenter? Taskcluster supports them all.</p>
+                </li>
+                <li><h3><i class="fa-solid fa-shapes"></i> Multi-Platform</h3>
+                    <p>Taskcluster <a class="underline" href="https://docs.taskcluster.net/docs/manual/task-execution/workers">workers will run on just about any device or cloud instance</a>. Mozilla currently runs workers on Linux, MacOS, various flavours of Windows (including desktop variants like Windows 7 and Arm64), and a collection of different mobile devices. If you can get the worker code onto your device, it can run tasks via Taskcluster.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Popular Features -->
+        <section class="border-t border-[#2f3840] container max-w-screen-lg mx-auto pt-24 mb-24">
+            <h2 class="text-5xl tracking-wide text-center font-thin">Popular Features</h2>
+            <ul>
+                <li>
+                    <h3><i class="fa-solid fa-vector-square"></i> Task Graphs</h3>
+                    <p>Create deep <a class="underline" href="https://docs.taskcluster.net/docs/manual/using/task-graph">graphs of tasks</a> with dependencies, e.g. tests depend on build tasks. As mentioned above, the task graph for the release process of Firefox contains well over 8,000 individual tasks.</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-clock"></i> Scheduled Tasks</h3>
+                    <p><a class="underline" href="https://docs.taskcluster.net/docs/manual/using/scheduled-tasks">Create tasks at specific times or days</a>, e.g. nightly builds, periodic version bumps, slow integration tasks, weekly hygiene/clean-up jobs. This is cron for your CI pipeline.</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-helmet-safety"></i> Bring Your Own Worker</h3>
+                    <p><a class="underline" href="https://docs.taskcluster.net/docs/manual/task-execution/workers">Run your tasks on workers in the cloud, or on your own hardware, or both</a>. If you can get the worker code on your device/instance, it can run tasks in Taskcluster.</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-terminal"></i> Interactive Tasks</h3>
+                    <p><a class="underline" href="https://docs.taskcluster.net/docs/workers/docker-worker/features#feature-interactive">Get interactive shell, VNC, or RDP access to running workers</a>, right in your web browser. Debugging running process in CI has never been easier.</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-code-branch"></i> GitHub Integration</h3>
+                    <p><a class="underline" href="https://docs.taskcluster.net/docs/reference/integrations/github/intro">Create tasks for pushes, pull requests(PRs), and tags</a>. Report results via GitHub checks. Continue using the workflow tools you love while gaining the benefits of Taskcluster.</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-cube"></i> API Driven Design</h3>
+                    <p>All access to the platform is via <a class="underline" href="https://docs.taskcluster.net/docs/manual/design/apis">REST API methods</a>, with multi-language client libraries. You can easily extend or replace existing services based on your needs, or even develop new services entirely!</p>
+                </li>
+                <li>
+                    <h3><i class="fa-solid fa-key"></i> Access Control</h3>
+                    <p>Access to API methods is controlled via granular, flexible <a class="underline" href="https://docs.taskcluster.net/docs/reference/platform/auth/scopes">scopes</a> supporting delegation patterns. Access control can be as simple or complex as your project demands.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container max-w-screen-lg mx-auto pt-16">
+            <h3>We'd Love to Hear from You</h3>
+            <p>Get in touch with the Taskcluster team, whether to ask questions, meet fellow users, or get started contributing to the project.</p>
+            <div>
+                Email <i class="fa-solid fa-envelope"></i>
+                <a class="underline" href="https://lists.mozilla.org/listinfo/tools-taskcluster">tools-taskcluster@lists.mozilla.org</a>
+                Chat <i class="fa-solid fa-comments"></i>
+                <a class="underline" href="https://chat.mozilla.org/#/room/#taskcluster:mozilla.org">#taskcluster:mozilla.org</a>
+            </div>
+            <img src="/src/images/contact_us.svg" alt="A person writing a form">
+        </div>
+    </footer>
+</body>
+
+</html>
