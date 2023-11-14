@@ -1,0 +1,16 @@
+body {
+    background-color: #121d27;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+header {
+    background-color: #2B5373;
+}
+
+p {
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 300;
+}
